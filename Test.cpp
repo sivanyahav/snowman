@@ -73,7 +73,7 @@ TEST_CASE("check base") {
 
 
 TEST_CASE("Negative numbers") {
-    CHECK_THROWS(snowman(-2334-1121));                                     
+    CHECK_THROWS(snowman(-23341121));                                     
     CHECK_THROWS(snowman(-12344112)); 
 }
 
@@ -87,7 +87,7 @@ TEST_CASE("Not enough characters") {
 
 TEST_CASE("Too many characters") {
      CHECK_THROWS(snowman(1234334321));
-     CHECK_THROWS(snowman(1112414321));
+     CHECK_THROWS(snowman(1112415571));
     
 }
 
