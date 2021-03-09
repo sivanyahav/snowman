@@ -4,7 +4,6 @@
 using namespace ariel;
 
 #include <string>
-#include <algorithm>
 using namespace std;
 
 
@@ -74,8 +73,8 @@ TEST_CASE("check base") {
 
 
 TEST_CASE("Negative numbers") {
-    CHECK_THROWS(snowman(2334-1121));                                     
-    CHECK_THROWS(snowman(1-2344112)); 
+    CHECK_THROWS(snowman(-2334-1121));                                     
+    CHECK_THROWS(snowman(-12344112)); 
 }
 
 TEST_CASE("Not enough characters") {
