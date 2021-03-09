@@ -8,7 +8,7 @@
 using namespace std;
 
 
-//constants
+//constant
 enum parts
 {
     ZERO,HAT, NOSE, LEFT_EYE, RIGHT_EYE, LEFT_ARM, RIGHT_ARM, TORSO, BASE 
