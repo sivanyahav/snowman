@@ -51,11 +51,11 @@ void checkDigits(int num){
 //This function returns an array in which each cell represents the type of organ you want
 array<int,sizeOfInput+1> getDigits(int num){
     array<int,sizeOfInput+1> arr={};
-    arr[0]=0;
+    arr.at(0)=0;
     const int base=10;
             
     for(int i=sizeOfInput; i>0; i--){
-        arr[i]=num%base;
+        arr.at(i)=num%base;
         num/=base;
     }
     return arr;
@@ -64,19 +64,19 @@ array<int,sizeOfInput+1> getDigits(int num){
 //Functions that build the parts of the snowman 
 
 string buildBase(const int baseType){
-    return " ("+bases[baseType]+")";
+    return " ("+bases.at(baseType)+")";
 }
 
 string buildTorso(const int leftArmType, const int torsoType, const int rightArmType){
-    return ""+leftArms[leftArmType]+"("+torsos[torsoType]+")"+rightArms[rightArmType];
+    return ""+leftArms.at(leftArmType)+"("+torsos.at(torsoType)+")"+rightArms.at(rightArmType);
 }
 
 string buildFace(const int leftArmTopType, const int leftEyeType, const int noseType, const int rightEyeType, const int rightArmType){
-    return ""+leftArmTops[leftArmTopType]+"("+leftEyes[leftEyeType]+noses[noseType]+rightEyes[rightEyeType]+")"+rightArmTops[rightArmType];
+    return ""+leftArmTops.at(leftArmTopType)+"("+leftEyes.at(leftEyeType)+noses.at(noseType)+rightEyes.at(rightEyeType)+")"+rightArmTops.at(rightArmType);
 }
 
 string buildHat(const int hatType){
-    return " "+hats[hatType];
+    return " "+hats.at(hatType);
 }
 
 /**
