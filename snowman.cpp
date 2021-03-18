@@ -18,7 +18,7 @@ const int types=5, sizeOfInput = 8;
 const char minDig='1', maxDig='4';
 
 const array<std::string,types> hats={"", "_===_", " ___\n .....", "  _\n  /_\\"," ___\n (_*_)"};
-const array<std::string,types> noses={"", ",", ".", "_",""};
+const array<std::string,types> noses={"", ",", ".", "_"," "};
 const array<std::string,types> leftEyes={"", ".", "o", "O","-"};
 const array<std::string,types> rightEyes={"", ".", "o", "O","-"};
 const array<std::string,types>leftArmTops={""," ","\\"," "," "};
@@ -26,7 +26,7 @@ const array<std::string,types> leftArms={"","<"," ","/"," "};
 const array<std::string,types> rightArmTops={""," ","/"," "," "};
 const array<std::string,types> rightArms={"",">"," ","\\"," "};
 const array<std::string,types> torsos={"", " : ", "] [", "> <","   "};
-const array<std::string,types>bases={"", " : ", "" "", "___","   "};
+const array<std::string,types>bases={"", " : ", "\" \"", "___","   "};
 
 
 //This function checks the integrity of the input
