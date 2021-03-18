@@ -25,7 +25,7 @@ TEST_CASE("check nose") {
     CHECK(snowman(11114411) == string(" _===_\n (.,.) \n ( : ) \n ( : )\n"));
     CHECK(snowman(12114411) == string(" _===_\n (...) \n ( : ) \n ( : )\n"));
     CHECK(snowman(13114411) == string(" _===_\n (._.) \n ( : ) \n ( : )\n"));
-    CHECK(snowman(14114411) == string(" _===_\n (..) \n ( : ) \n ( : )\n"));
+    CHECK(snowman(14114411) == string(" _===_\n (. .) \n ( : ) \n ( : )\n"));
 }
 
 TEST_CASE("check left eye") {
