@@ -11,7 +11,7 @@ using namespace std;
 //constant
 enum parts
 {
-    ZERO,HAT, NOSE, LEFT_EYE, RIGHT_EYE, LEFT_ARM, RIGHT_ARM, TORSO, BASE 
+    HAT=1, NOSE, LEFT_EYE, RIGHT_EYE, LEFT_ARM, RIGHT_ARM, TORSO, BASE 
 };
 
 const int types=5, sizeOfInput = 8;
